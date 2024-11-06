@@ -20,8 +20,8 @@ app.add_middleware(
 )
 
 # Load Wav2Vec2 model and processor
-processor = Wav2Vec2Processor.from_pretrained("facebook/wav2vec2-base-960h")
-model = Wav2Vec2ForCTC.from_pretrained("facebook/wav2vec2-base-960h")
+processor = Wav2Vec2Processor.from_pretrained("facebook/wav2vec2-large-960h-lv60-self")
+model = Wav2Vec2ForCTC.from_pretrained("facebook/wav2vec2-large-960h-lv60-self")
 
 @app.post("/api/upload-audio")
 async def upload_audio(audio: UploadFile = File(...)):
