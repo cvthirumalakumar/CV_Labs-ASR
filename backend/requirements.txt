@@ -1,6 +1,6 @@
 fastapi
 torch
-trochaudio
+torchaudio
 transformers
 uvicorn
 python-multipart
